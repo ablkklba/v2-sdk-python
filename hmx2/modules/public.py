@@ -565,9 +565,8 @@ class Public(object):
       block["timestamp"],
     )
 
-    initial_margin_fraction_bps = data["initial_margin_fraction_bps"] if data["initial_margin_fraction_bps"] else "N/A"
-    maintenance_margin_fraction_bps = data["maintenance_margin_fraction_bps"] if data["maintenance_margin_fraction_bps"] else "N/A"
-
+    initial_margin_fraction_bps = data.get("initial_margin_fraction_bps", "N/A")
+    maintenance_margin_fraction_bps = data.get("maintenance_margin_fraction_bps", "N/A")
 
     borrowing_rate = Calculator.get_borrowing_rate(
       data["asset_class_config"], data["asset_class"], tvl)

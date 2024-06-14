@@ -48,13 +48,13 @@ CHAIN_COLLATERAL = {
       COLLATERAL_DAI,
       COLLATERAL_WETH,
       COLLATERAL_WBTC,
-      COLLATERAL_sGLP,
-      COLLATERAL_ARB,
-      COLLATERAL_wstETH,
+      # COLLATERAL_sGLP,
+      # COLLATERAL_ARB,
+      # COLLATERAL_wstETH,
       COLLATERAL_USDC,
-      COLLATERAL_gmBTC,
-      COLLATERAL_gmETH,
-      COLLATERAL_PYTH,
+      # COLLATERAL_gmBTC,
+      # COLLATERAL_gmETH,
+      # COLLATERAL_PYTH,
   ],
   81457: [
       BLAST_COLLATERAL_ETH,
@@ -125,42 +125,42 @@ TOKEN_PROFILE = {
         "asset": ASSET_BTC,
         "decimals": 8
     },
-      "sGLP": {
-        "symbol": "sGLP",
-        "address": "0x5402B5F40310bDED796c7D0F3FF6683f5C0cFfdf",
-        "asset": ASSET_GLP,
-        "decimals": 18
-    },
-      "0x5402B5F40310bDED796c7D0F3FF6683f5C0cFfdf": {
-        "symbol": "sGLP",
-        "address": "0x5402B5F40310bDED796c7D0F3FF6683f5C0cFfdf",
-        "asset": ASSET_GLP,
-        "decimals": 18
-    },
-      "ARB": {
-        "symbol": "ARB",
-        "address": "0x912CE59144191C1204E64559FE8253a0e49E6548",
-        "asset": ASSET_ARB,
-        "decimals": 18
-    },
-      "0x912CE59144191C1204E64559FE8253a0e49E6548": {
-        "symbol": "ARB",
-        "address": "0x912CE59144191C1204E64559FE8253a0e49E6548",
-        "asset": ASSET_ARB,
-        "decimals": 18
-    },
-      "wstETH": {
-        "symbol": "wstETH",
-        "address": "0x5979D7b546E38E414F7E9822514be443A4800529",
-        "asset": ASSET_wstETH,
-        "decimals": 18
-    },
-      "0x5979D7b546E38E414F7E9822514be443A4800529": {
-        "symbol": "wstETH",
-        "address": "0x5979D7b546E38E414F7E9822514be443A4800529",
-        "asset": ASSET_wstETH,
-        "decimals": 18
-    },
+    #   "sGLP": {
+    #     "symbol": "sGLP",
+    #     "address": "0x5402B5F40310bDED796c7D0F3FF6683f5C0cFfdf",
+    #     "asset": ASSET_GLP,
+    #     "decimals": 18
+    # },
+    #   "0x5402B5F40310bDED796c7D0F3FF6683f5C0cFfdf": {
+    #     "symbol": "sGLP",
+    #     "address": "0x5402B5F40310bDED796c7D0F3FF6683f5C0cFfdf",
+    #     "asset": ASSET_GLP,
+    #     "decimals": 18
+    # },
+    #   "ARB": {
+    #     "symbol": "ARB",
+    #     "address": "0x912CE59144191C1204E64559FE8253a0e49E6548",
+    #     "asset": ASSET_ARB,
+    #     "decimals": 18
+    # },
+    #   "0x912CE59144191C1204E64559FE8253a0e49E6548": {
+    #     "symbol": "ARB",
+    #     "address": "0x912CE59144191C1204E64559FE8253a0e49E6548",
+    #     "asset": ASSET_ARB,
+    #     "decimals": 18
+    # },
+    #   "wstETH": {
+    #     "symbol": "wstETH",
+    #     "address": "0x5979D7b546E38E414F7E9822514be443A4800529",
+    #     "asset": ASSET_wstETH,
+    #     "decimals": 18
+    # },
+    #   "0x5979D7b546E38E414F7E9822514be443A4800529": {
+    #     "symbol": "wstETH",
+    #     "address": "0x5979D7b546E38E414F7E9822514be443A4800529",
+    #     "asset": ASSET_wstETH,
+    #     "decimals": 18
+    # },
       "USDC": {
         "symbol": "USDC",
         "address": "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
@@ -173,42 +173,42 @@ TOKEN_PROFILE = {
         "asset": ASSET_USDC,
         "decimals": 6
     },
-      "gmBTC": {
-        "symbol": "gmBTC",
-        "address": "0x47c031236e19d024b42f8AE6780E44A573170703",
-        "asset": ASSET_gmBTC,
-        "decimals": 18
-    },
-      "0x47c031236e19d024b42f8AE6780E44A573170703": {
-        "symbol": "gmBTC",
-        "address": "0x47c031236e19d024b42f8AE6780E44A573170703",
-        "asset": ASSET_gmBTC,
-        "decimals": 18
-    },
-      "gmETH": {
-        "symbol": "gmETH",
-        "address": "0x70d95587d40A2caf56bd97485aB3Eec10Bee6336",
-        "asset": ASSET_gmETH,
-        "decimals": 18
-    },
-      "0x70d95587d40A2caf56bd97485aB3Eec10Bee6336": {
-        "symbol": "gmETH",
-        "address": "0x70d95587d40A2caf56bd97485aB3Eec10Bee6336",
-        "asset": ASSET_gmETH,
-        "decimals": 18
-    },
-      "PYTH": {
-        "symbol": "PYTH",
-        "address": "0xE4D5c6aE46ADFAF04313081e8C0052A30b6Dd724",
-        "asset": ASSET_PYTH,
-        "decimals": 18
-    },
-      "0xE4D5c6aE46ADFAF04313081e8C0052A30b6Dd724": {
-        "symbol": "PYTH",
-        "address": "0xE4D5c6aE46ADFAF04313081e8C0052A30b6Dd724",
-        "asset": ASSET_PYTH,
-        "decimals": 18
-    },
+    #   "gmBTC": {
+    #     "symbol": "gmBTC",
+    #     "address": "0x47c031236e19d024b42f8AE6780E44A573170703",
+    #     "asset": ASSET_gmBTC,
+    #     "decimals": 18
+    # },
+    #   "0x47c031236e19d024b42f8AE6780E44A573170703": {
+    #     "symbol": "gmBTC",
+    #     "address": "0x47c031236e19d024b42f8AE6780E44A573170703",
+    #     "asset": ASSET_gmBTC,
+    #     "decimals": 18
+    # },
+    #   "gmETH": {
+    #     "symbol": "gmETH",
+    #     "address": "0x70d95587d40A2caf56bd97485aB3Eec10Bee6336",
+    #     "asset": ASSET_gmETH,
+    #     "decimals": 18
+    # },
+    #   "0x70d95587d40A2caf56bd97485aB3Eec10Bee6336": {
+    #     "symbol": "gmETH",
+    #     "address": "0x70d95587d40A2caf56bd97485aB3Eec10Bee6336",
+    #     "asset": ASSET_gmETH,
+    #     "decimals": 18
+    # },
+    #   "PYTH": {
+    #     "symbol": "PYTH",
+    #     "address": "0xE4D5c6aE46ADFAF04313081e8C0052A30b6Dd724",
+    #     "asset": ASSET_PYTH,
+    #     "decimals": 18
+    # },
+    #   "0xE4D5c6aE46ADFAF04313081e8C0052A30b6Dd724": {
+    #     "symbol": "PYTH",
+    #     "address": "0xE4D5c6aE46ADFAF04313081e8C0052A30b6Dd724",
+    #     "asset": ASSET_PYTH,
+    #     "decimals": 18
+    # },
   },
   # Arbitrum Sepolia
   421614: {

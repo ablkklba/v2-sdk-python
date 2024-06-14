@@ -33,7 +33,7 @@ class OracleMiddleware(object):
     self.onchain_pricelens_oracle = onchain_pricelens_oracle
     self.calc_pricelens_oracle = calc_pricelens_oracle
 
-  def get_price(self, asset_id: str):
+  def get_price(self, asset_id: str, price_table = None):
     '''
     Get the latest price of the asset.
 
@@ -66,7 +66,12 @@ class OracleMiddleware(object):
 
     if asset_id in [ASSET_ybETH, ASSET_ybUSDB]:
       return self.calc_pricelens_oracle.get_price(asset_id)
-
+    
+    if asset_id == 'USDC' or asset_id == 'USDC.e' or asset_id == 'USDT' or asset_id == 'DAI':
+      return 1
+    if price_table is not None: #self.pyth_oracle.get_price(asset_id) is None:
+      return price_table[price_table['instId'] == asset_id]['markPx'].values[0]
+      
     return self.pyth_oracle.get_price(asset_id)
 
   def get_multiple_price(self, asset_ids: List[str]):
